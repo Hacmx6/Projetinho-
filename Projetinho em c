@@ -1,0 +1,64 @@
+#include <stdio.h>
+
+int main(void) {
+  int a, b, c, v, j, k, anu, n ;
+  char nm[40];
+  printf("     SEJA BEM VINDO:\n ");
+  
+  printf("Digite seu nome:\n ");
+  scanf("%s", nm);
+  
+  printf("Ola senhor(a) %s\n", nm);
+  
+  printf("\n Um número \n ");
+  scanf("%d", &a);
+  
+  printf("outro número \n");
+  scanf("%d", &b);
+  c = a + b;
+  
+  printf("%d + %d = %d", a, b, c);
+  
+  printf("\n\n soma o resultado + 100  e depois tira 30 da soma, e multiplica por 2\n  Boa sorte!!  \n\n");
+
+  j = (c + 100 - 30) * 2;
+  
+  printf("Deu  quanto?\n");
+  scanf("%d", &v);
+  
+ 
+  
+  if (v == j){
+  printf("%d parabéns você acertouuu %s!!!\n", j, nm);
+  }else{
+    printf("Você errouu %s, o resultado era %d\n", nm, j);
+  }
+ 
+  
+  printf("\n Voce tem quantos anos %s?\n",nm);
+  scanf("%d", &k);
+ anu = k - 2023;
+    
+  if (k >= 18){  
+    printf("\nVocê é maior de idade %s você nasceu em %d ", nm, anu);
+     
+ }else if(k <18){
+printf("\nVocê é menor de idade %s voce nasceu em %d \n", nm, anu);
+ 
+ }
+    
+
+ else {
+   printf("opcao invalida %s",nm);
+   
+    }
+
+
+  
+  return 0;
+}
+  
+  
+    
+  
+  
